@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="index3.css" rel="stylesheet" />
+    <title>Third page</title>
+	<script src="index3.js"></script>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Bookorama</h1>
+          <p>Books for Ninjas</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Name of the Wind</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Wise Man's Fear</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Kafka on the Shore</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Master and the Margarita</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+				
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+			<!-- <a href="google.com">Google</a> -->
+			<input type="checkbox" id="check">
+			<label for="check" >Hide all</label>
+	    	<input type="text" placeholder="Add a book..." />
+	    	<button>Add</button>
+	    </form>
+		<div id="tabbed-content">
+			<ul class="tabs">
+			  <li data-target="#about" class="active">About</li>
+			  <li data-target="#contact">Contact</li>
+			</ul>
+			<!-- the data target targets the id which is to be displayed and the panel will be set to active -->
+			<!-- currently the about is active hence the li is also active -->
+			<div class="panel active" id="about">
+			  <p>Content for about tab...</p>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+			</div>
+			<div class="panel" id="contact">
+			  <p>Content for contact tab...</p>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+			</div>
+		  </div>
+    </div>
+    
+  </body>
+</html>
